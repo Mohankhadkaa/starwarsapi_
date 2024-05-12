@@ -1,10 +1,33 @@
 body {
     background-image: url("https://wallpaperboat.com/wp-content/uploads/2021/08/31/78310/star-wars-35.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
     height: 100vh;
     margin: 0;
     padding: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-size: contain; 
+    }
+
+    .container {
+        margin-top: 30%;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .card {
+        width: calc(50% - 20px);
+    }
 }
 
 .container {
@@ -79,22 +102,4 @@ body {
     top: 10px;
     right: 10px;
     width: 250px;
-}
-
-@media only screen and (max-width: 768px) {
-    .container {
-        margin-top: 30%;
-    }
-
-    .button {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-
-    .logo {
-        width: 200px;
-    }
-
-    .card {
-        width: calc(50% - 20px);
 }
